@@ -4,7 +4,38 @@
     <title>Pankaj Bisht Portfolio</title>
 
     <style>
+.skills-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+margin-top:20px;
+}
 
+.skill-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+
+.skill-box h3{
+color:#38bdf8;
+margin-top:0;
+margin-bottom:15px;
+}
+
+.skill-box ul{
+padding-left:20px;
+line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.skills-grid{
+grid-template-columns:1fr;
+}
+
+}
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -132,6 +163,12 @@ aligned.
 
 <div class="card">
 
+<h2 id="skills">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-box">
+
 <h3>Business Analysis Lifecycle</h3>
 
 <ul>
@@ -144,7 +181,10 @@ aligned.
 <li>Sign-off Management</li>
 </ul>
 
-<hr>
+</div>
+
+
+<div class="skill-box">
 
 <h3>Wireframing & UX BA</h3>
 
@@ -154,52 +194,45 @@ aligned.
 <li>User Flow Mapping</li>
 <li>Screen-level Acceptance Criteria</li>
 <li>UI Logic Specification</li>
-<li>Collaboration with UI/UX Designers</li>
+<li>UI/UX Collaboration</li>
 </ul>
 
-<hr>
+</div>
+
+
+<div class="skill-box">
 
 <h3>Process Modelling</h3>
 
 <ul>
 <li>BPMN</li>
 <li>AS-IS / TO-BE Workflows</li>
-<li>Data Flow Diagrams (DFD)</li>
+<li>DFD</li>
 <li>Swimlane Diagrams</li>
 <li>State Transition Models</li>
 <li>Process Optimization</li>
 </ul>
 
-<hr>
+</div>
+
+
+<div class="skill-box">
 
 <h3>Scrum Practice</h3>
 
 <ul>
 <li>Sprint Planning</li>
 <li>Backlog Grooming</li>
-<li>Daily Standups</li>
-<li>Sprint Reviews</li>
+<li>Standups</li>
 <li>Retrospectives</li>
 <li>DoR / DoD</li>
 <li>Velocity Tracking</li>
-<li>Impediment Removal</li>
-<li>Team Coaching</li>
 </ul>
 
-<hr>
+</div>
 
-<h3>Agile & Delivery</h3>
 
-<ul>
-<li>Scrum</li>
-<li>Kanban</li>
-<li>Release Planning</li>
-<li>Risk & Dependency Management</li>
-<li>Change Management</li>
-<li>Scope Control</li>
-</ul>
-
-<hr>
+<div class="skill-box">
 
 <h3>Technical Skills</h3>
 
@@ -207,69 +240,31 @@ aligned.
 <li>REST APIs</li>
 <li>JSON Schema</li>
 <li>Postman</li>
-<li>Swagger / OpenAPI</li>
-<li>SQL Validation</li>
-<li>ETL Workflows</li>
+<li>Swagger/OpenAPI</li>
+<li>SQL</li>
 <li>Webhook Design</li>
-<li>System Integration Specifications</li>
 </ul>
 
-<hr>
+</div>
 
-<h3>UAT & Quality</h3>
 
-<ul>
-<li>UAT Strategy</li>
-<li>Test Case Design</li>
-<li>Defect Triage</li>
-<li>Acceptance Sign-off</li>
-<li>Regression Coverage</li>
-</ul>
+<div class="skill-box">
 
-<hr>
-
-<h3>Stakeholder Management</h3>
-
-<ul>
-<li>Workshop Facilitation</li>
-<li>Requirements Walkthrough</li>
-<li>Cross-functional Collaboration</li>
-<li>Global Client Engagement</li>
-<li>Executive Communication</li>
-</ul>
-
-<hr>
-
-<h3>AI Tools</h3>
+<h3>AI + Tools</h3>
 
 <ul>
 <li>ChatGPT</li>
 <li>Claude AI</li>
 <li>NotebookLM</li>
-<li>Julius AI</li>
-<li>Notion AI</li>
-<li>Stitch</li>
-</ul>
-
-<hr>
-
-<h3>Tools & Platforms</h3>
-
-<ul>
 <li>Jira</li>
 <li>Confluence</li>
-<li>Figma</li>
-<li>Postman</li>
-<li>Swagger</li>
-<li>Shopify</li>
-<li>Magento</li>
-<li>Firebase</li>
-<li>Stripe</li>
 <li>Azure DevOps</li>
-<li>Advanced Excel</li>
-<li>Looker Studio</li>
+<li>Figma</li>
 </ul>
 
+</div>
+
+</div>
 </div>
         <h2>Projects</h2>
 <div class="card">
