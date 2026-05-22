@@ -140,17 +140,32 @@ margin:auto;
 
 .contact-card{
 
-min-height:160px;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
+padding:35px;
 
 }
 
-.card{
+.contact-grid{
 
-border-radius:16px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+
+}
+
+.contact-grid h3{
+
+color:#38bdf8;
+margin-bottom:10px;
+
+}
+
+@media(max-width:768px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
 
 }
     </style>
@@ -368,30 +383,46 @@ auction management and admin controls.
             </p>
         </div>
 </div>
-        <div class="section-wrapper">
+      <section class="section-wrapper">
 
 <h2 id="contact">Contact</h2>
 
 <div class="card contact-card">
-</div
-    </div
-            <p>Email: pankajbisht59@gmail.com</p>
 
-            <p>
-LinkedIn:
+<div class="contact-grid">
+
+<div>
+
+<h3>Email</h3>
+
+<p>
+pankajbisht59@gmail.com
+</p>
+
+</div>
+
+<div>
+
+<h3>LinkedIn</h3>
+
+<p>
+
 <a href="https://www.linkedin.com/in/pankaj-bisht-4194a2a1"
-target="_blank"
-style="color:#38bdf8;">
+target="_blank">
 
 linkedin.com/in/pankaj-bisht-4194a2a1
 
 </a>
+
 </p>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
+</div>
+
+</section>
     <footer>
 
         © 2026 Pankaj Bisht Portfolio
