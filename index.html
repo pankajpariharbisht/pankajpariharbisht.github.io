@@ -214,32 +214,46 @@ align-items:center;
 
 justify-content:space-between;
 
-gap:35px;
+gap:30px;
 
 margin-top:25px;
 
-padding-right:20px;
-
-}
 }
 
-.linkedin-profile img{
+.profile-pic{
 
-width:160px;
+width:160px !important;
 
-height:160px;
+height:160px !important;
 
-object-fit:cover;
+min-width:160px;
 
-object-position:center 18px;
+min-height:160px;
 
-border-radius:50%;
+max-width:160px;
+
+max-height:160px;
+
+border-radius:50% !important;
+
+object-fit:cover !important;
+
+object-position:center top !important;
 
 border:5px solid #38bdf8;
 
 box-shadow:0 4px 15px rgba(0,0,0,.18);
 
+display:block;
+
 }
+
+.linkedin-button-wrap{
+
+flex:1;
+
+}
+
 .linkedin-btn{
 
 display:inline-block;
@@ -248,15 +262,13 @@ background:#0077b5;
 
 color:white !important;
 
-padding:12px 18px;
+padding:14px 22px;
 
-border-radius:8px;
+border-radius:10px;
 
 text-decoration:none;
 
-font-weight:bold;
-
-margin-top:10px;
+font-weight:600;
 
 transition:.3s;
 
@@ -267,7 +279,6 @@ transition:.3s;
 background:#005f8d;
 
 transform:translateY(-2px);
-
 }
 /* BUTTON */
 
@@ -620,7 +631,9 @@ pankajbisht59@gmail.com
 <h3>LinkedIn</h3>
 
 <div class="linkedin-profile">
-<div>
+
+<div class="linkedin-button-wrap">
+
 <a class="linkedin-btn"
 
 href="https://linkedin.com/in/pankaj-bisht-4194a2a1"
@@ -633,12 +646,11 @@ View LinkedIn Profile →
 
 </div>
 
-<img src="Passport Photo.jpg" alt="Pankaj Bisht">
-
-<div>
+<img src="Passport Photo.jpg" alt="Pankaj Bisht" class="profile-pic">
 
 </div>
 
+</div>
 </section>
     <footer>
 
